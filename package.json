@@ -1,0 +1,41 @@
+{
+  "name": "auth1-project",
+  "version": "1.0.0",
+  "description": "Authentication assignment for LambdaSchool. Built using node/express, knex, sqlite3, cors, helmet, bcryptjs, express-session",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodyBrewer/node-auth1-project.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "sqlite3",
+    "knex",
+    "cors",
+    "helmet",
+    "bcryptjs",
+    "express-session",
+    "authentication"
+  ],
+  "author": "Cody Brewer (https://github.com/CodyBrewer)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodyBrewer/node-auth1-project/issues"
+  },
+  "homepage": "https://github.com/CodyBrewer/node-auth1-project#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0"
+  }
+}
