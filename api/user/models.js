@@ -11,19 +11,12 @@ const findBy = (filter) => {
 const add = async (user) => {
 	const [id] = await db('users').insert(user, "id");
 
-	return findById(id)
-}
-
-const findById = (id) => {
-	return db("users")
-	  .where({ id })
-	  .first();
+	return findBy({ id })
 }
 
 module.exports = {
     findAll,
 	findBy,
-	findById,
 	add,
 }
 

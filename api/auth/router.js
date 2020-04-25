@@ -11,13 +11,9 @@ router.post('/register', (req, res) => {
     user.password = hash;
 
     Users.add(user)
-        .then(saved => {
-            res.status(201).json(saved)
-        })
-        .catch(err =>{ res.status(500).json(err); 
-            console.log(err)
-    });
-});
+        .then(saved => res.status(201).json(saved))
+        .catch(err => res.status(500).json(err));
+})
 
 router.post('/login', (req, res) => {
     let {username, password } = req.body;
